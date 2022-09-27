@@ -22,7 +22,7 @@ public class stepdDefs {
     }
 
     @When("user enter email and password")
-    public void user_enter_email_and_password() throws InterruptedException {
+    public void user_enter_email_and_password() {
         String email=ConfigurationReader.get("email");
         String password=ConfigurationReader.get("password");
 
@@ -39,12 +39,16 @@ public class stepdDefs {
     @And("user search for jobs which is {string}")
     public void userSearchForJobsWhichIs(String job) {
         homePage.searchForJob(job);
-
     }
 
-    @When("user choose Easy Apply filter")
-    public void user_choose_Easy_Apply_filter() {
-        homePage.filterForEasyApply();
+    @And("user fill location as {string}")
+    public void userFillLocationAs(String location) {
+        homePage.fillLocationInput(location);
+    }
+
+    @When("user select filter as {string} on filters bar")
+    public void userSelectFilterAsOnFiltersBar(String filterName) {
+        homePage.selectFilterOnFilterBar(filterName);
     }
 
     @When("user filter with all filters")

@@ -13,9 +13,6 @@ import java.util.List;
 
 public abstract class BasePage {
 
-
-
-
     @FindBy(css = ".jobs-apply-button--top-card")
     public WebElement easyApplyButton;
 

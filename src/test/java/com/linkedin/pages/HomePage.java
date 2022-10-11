@@ -21,7 +21,7 @@ public class HomePage extends BrowserUtils {
     @FindBy(css = "[aria-label='Search by title, skill, or company']")
     public WebElement searchInbox;
 
-    @FindBy(css = "[title='City, state, or zip code']")
+    @FindBy(css = "[id*='jobs-search-box-location-id-ember']")
     public WebElement locationInbox;
 
     @FindBy(xpath = "//button[text()='Search']")
@@ -46,8 +46,10 @@ public class HomePage extends BrowserUtils {
 
     public void fillLocationInput(String location) {
         waitForVisibility(locationInbox, 10);
-        locationInbox.sendKeys(location);
-        locationInbox.sendKeys(Keys.ENTER);
+        if (location.isEmpty()){
+            locationInbox.sendKeys(location);
+            locationInbox.sendKeys(Keys.ENTER);
+        }
     }
 
     public void selectFilterOnFilterBar(String filterWithVisibiltyName) {

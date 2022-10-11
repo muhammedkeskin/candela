@@ -3,6 +3,7 @@ package com.linkedin.step_defs;
 import com.linkedin.pages.FilterPage;
 import com.linkedin.pages.HomePage;
 import com.linkedin.pages.LoginPage;
+import com.linkedin.pages.ResultsPage;
 import com.linkedin.utilities.ConfigurationReader;
 import com.linkedin.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -14,6 +15,7 @@ public class stepdDefs {
 
     HomePage homePage=new HomePage();
     FilterPage filterPage=new FilterPage();
+    ResultsPage resultsPage=new ResultsPage();
 
     @Given("user navigate login page")
     public void user_navigate_login_page() {
@@ -52,7 +54,7 @@ public class stepdDefs {
     }
 
     @When("user filter with all filters")
-    public void user_filter_with_all_filters() {
+    public void user_filter_with_all_filters() throws InterruptedException {
         filterPage.clickAllFiltersButton()
                 .selectSortAsMostRecent()
                 .selectPast24Hours()
@@ -67,5 +69,8 @@ public class stepdDefs {
     }
 
 
-
+    @When("user select job on Results Page")
+    public void userSelectJobOnResultsPage() throws InterruptedException {
+        resultsPage.getAllResults();
+    }
 }

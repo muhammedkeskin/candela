@@ -2,6 +2,7 @@ package com.linkedin.pages;
 
 import com.linkedin.utilities.BrowserUtils;
 import com.linkedin.utilities.Driver;
+import com.linkedin.utilities.StrongerDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,6 +31,7 @@ public class FilterPage extends BrowserUtils {
     public FilterPage clickAllFiltersButton() throws InterruptedException {
         wait(2);
         allFiltersButton.click();
+        urlContains("www.google.com");
         return this;
     }
     public FilterPage selectSortAsMostRecent() throws InterruptedException {

@@ -22,7 +22,7 @@ public class LoginPage extends BrowserUtils {
     public WebElement acceptAndJoin;
 
     public void login(String email, String password) {
-        Driver.get().manage().window().maximize();
+        maximize();
         emailArea.sendKeys(email);
         passwordArea.sendKeys(password);
         acceptAndJoin.click();

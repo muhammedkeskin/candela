@@ -37,19 +37,16 @@ public class stepdDefs {
         homePage.navigateJobPage();
 
     }
-/*
+
     @And("user search for jobs which is {string}")
     public void userSearchForJobsWhichIs(String job) {
         homePage.searchForJob(job);
     }
-*/
 
-    /*
     @And("user fill location as {string}")
     public void userFillLocationAs(String location) {
         homePage.fillLocationInput(location);
     }
-     */
 
     @When("user select filter as {string} on filters bar")
     public void userSelectFilterAsOnFiltersBar(String filterName) {
@@ -70,34 +67,6 @@ public class stepdDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-
-    @When("user search for jobs which is {string}")
-    public void user_search_for_jobs_which_is(String job) {
-        homePage.searchForJob(job);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @When("user select job on Results Page")

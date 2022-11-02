@@ -9,19 +9,12 @@ Feature: Apply Jobs
 
 
 
+    And user fill location as "United States"
 
 
-
-
-
-
-
-
-    #And user search for jobs which is "qa engineer"
-    #And user fill location as "United States"
-    #When user select filter as "Easy Apply" on filters bar
-    #When user filter with all filters
-    #When user select job on Results Page
+    When user select filter as "Easy Apply" on filters bar
+    When user filter with all filters
+    When user select job on Results Page
     #Then user easy Apply
 
 

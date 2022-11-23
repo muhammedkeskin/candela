@@ -1,7 +1,11 @@
 package com.linkedin.utilities;
 
+//NO NEEDS THIS PAGE, WON'T USE
+//BROWSERUTILS CLASS HAVE THESE METHODS AND MORE
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -69,4 +73,20 @@ public class StrongerDriver {
     public void maximize() {
         Driver.get().manage().window().maximize();
     }
+
+/*
+    public ResultsPage scrollDown(int downCount) throws InterruptedException {
+        for(int a=0;a>downCount;a++) {
+            Thread.sleep(1000);
+            asd.sendKeys(Keys.ARROW_DOWN);
+        }
+
+//        JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
+//        for (int i = 0; i < downCount; i++) {
+//             jse.executeScript("window.scrollBy(0,250)");
+//        }
+
+        return this;
+    }
+    */
 }

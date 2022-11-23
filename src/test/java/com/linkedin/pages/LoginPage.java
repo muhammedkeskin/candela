@@ -21,11 +21,4 @@ public class LoginPage extends BrowserUtils {
     @FindBy(css = ".sign-in-form__submit-button")
     public WebElement acceptAndJoin;
 
-    public void login(String email, String password) {
-        maximize();
-        emailArea.sendKeys(email);
-        passwordArea.sendKeys(password);
-        acceptAndJoin.click();
-        waitForPageToLoad(60);
-    }
 }

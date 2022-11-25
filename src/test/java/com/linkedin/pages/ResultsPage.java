@@ -38,6 +38,6 @@ public class ResultsPage extends BrowserUtils {
     @FindBy(css = "[aria-label='Review your application']")
     public WebElement reviewButton;
 
-    @FindBy(xpath = "//button[@class='artdeco-modal__dismiss artdeco-button artdeco-button--circle artdeco-button--muted artdeco-button--2 artdeco-button--tertiary ember-view']")
+    @FindBy(xpath = "//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view mlA block']/span")
     public WebElement premiumWarningCancellationIcon;
 }

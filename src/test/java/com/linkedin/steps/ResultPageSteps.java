@@ -23,7 +23,7 @@ public class ResultPageSteps extends ResultsPage {
         return this;
     }
 
-    public ResultPageSteps scrollUpOfThPage() {
+    public ResultPageSteps scrollUpOfThePage() {
         for (int i=0;i<10;i++) {
             firstJob.sendKeys(Keys.PAGE_UP);
         }
@@ -47,9 +47,6 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private void easyApplyProcess() {
-        //1. bir array oluştur
-        //2. arrayin içine aranacak kelimeleri belirt
-        //bu kelimeler sayfanın sağında geçiyorsa easy apply diye devam et
         waitFor(2);
         List<WebElement> checkIfAppliedBefore = Driver.get().findElements(By.cssSelector(".artdeco-inline-feedback__message"));
         if (!(checkIfAppliedBefore.size() > 0)) {
@@ -60,6 +57,12 @@ public class ResultPageSteps extends ResultsPage {
             }
             List<WebElement> checkNextButton = Driver.get().findElements(By.cssSelector("[aria-label='Continue to next step']"));
             while(checkNextButton.size()>0) {
+                List<WebElement> premiumWarning = Driver.get().findElements(By.xpath("//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view mlA block']/span"));
+                if(premiumWarning.size()>0) {
+                    premiumWarningCancellationIcon.click();
+                    waitFor(1);
+                    break;
+                }
                 nextButton.click();
                 List<WebElement> errorMessage = Driver.get().findElements(By.xpath("//p[@class='fb-form-element__error-text t-12']"));
                 if(errorMessage.size()>0) {
@@ -76,15 +79,20 @@ public class ResultPageSteps extends ResultsPage {
                         discardButton.click();
                         break;
                     }
+                    checkReviewButton = Driver.get().findElements(By.cssSelector("[aria-label='Review your application']"));
+                    if(checkReviewButton.size()>0) {
+                        reviewButton.click();
+                        errorMessage = Driver.get().findElements(By.xpath("//p[@class='fb-form-element__error-text t-12']"));
+                        if(errorMessage.size()>0) {
+                            cancelIcon.click();
+                            discardButton.click();
+                            break;
+                        }
+                    }
                 }
                 checkSubmitButton = Driver.get().findElements(By.cssSelector("[aria-label='Submit application']"));
                 if(checkSubmitButton.size() > 0) {
                     submitButton.click();
-                    List<WebElement> premiumWarning = Driver.get().findElements(By.xpath("//button[@class='artdeco-modal__dismiss artdeco-button artdeco-button--circle artdeco-button--muted artdeco-button--2 artdeco-button--tertiary ember-view']"));
-                    if(premiumWarning.size()>0) {
-                        premiumWarningCancellationIcon.click();
-                        break;
-                    }
                     break;
                 }
             }
@@ -92,6 +100,9 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
+        //1. bir array oluştur
+        //2. arrayin içine aranacak kelimeleri belirt
+        //bu kelimeler sayfanın sağında geçiyorsa easy apply diye devam et
         return false;
     }
 }

@@ -54,7 +54,7 @@ public class stepdDefs {
     }
 
     @When("user filter with all filters")
-    public void user_filter_with_all_filters() throws InterruptedException {
+    public void user_filter_with_all_filters() {
         filterPageSteps.clickAllFiltersButton()
                 .selectPast24Hours()
                 .filterAsUnder10Applicants()
@@ -64,8 +64,7 @@ public class stepdDefs {
     @Then("calculate the total jobs on the first Result Page")
     public void calculate_the_total_jobs_on_the_first_Result_Page() {
         resultsPageSteps.scrollEndOfThePage()
-                //Keys.End ile de dene
-                .scrollUpOfThPage()
+                .scrollUpOfThePage()
                 .calculateAllOffersOnTheResultsPage();
     }
 

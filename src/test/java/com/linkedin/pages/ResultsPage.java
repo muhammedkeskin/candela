@@ -3,10 +3,7 @@ import com.linkedin.utilities.BrowserUtils;
 import com.linkedin.utilities.Driver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class ResultsPage extends BrowserUtils {
 
@@ -38,6 +35,6 @@ public class ResultsPage extends BrowserUtils {
     @FindBy(css = "[aria-label='Review your application']")
     public WebElement reviewButton;
 
-    @FindBy(xpath = "//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view mlA block']/span")
-    public WebElement premiumWarningCancellationIcon;
+    @FindBy(xpath = "//li-icon[@type='cancel-icon'][@class='artdeco-button__icon']")
+    public WebElement warningAfterSubmittedCancellationIcon;
 }

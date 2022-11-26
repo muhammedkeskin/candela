@@ -61,15 +61,9 @@ public class stepdDefs {
                 .clickShowResultsButton();
     }
 
-    @Then("calculate the total jobs on the first Result Page")
-    public void calculate_the_total_jobs_on_the_first_Result_Page() {
-        resultsPageSteps.scrollEndOfThePage()
-                .scrollUpOfThePage()
-                .calculateAllOffersOnTheResultsPage();
-    }
-
     @Then("user try to easy Apply to all results on the Results Page")
     public void user_try_to_easy_Apply_to_all_results_on_the_Results_Page() {
-        resultsPageSteps.apply();
+        resultsPageSteps.refreshPage();
+        resultsPageSteps.applyAllJobsWhereInAllPages();
     }
 }

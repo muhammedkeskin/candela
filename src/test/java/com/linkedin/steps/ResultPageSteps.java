@@ -204,5 +204,14 @@ public class ResultPageSteps extends ResultsPage {
         return pages.size();
     }
 
-
+    private boolean easyApplyLogic() {
+        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Data Architect", "Director", "Mobile" };
+        int a = WontInterestWords.length;
+        for(int i=0;i<a;i++) {
+            if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

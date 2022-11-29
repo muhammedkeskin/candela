@@ -10,15 +10,8 @@ Feature: Apply Jobs
     When user select filter as "Easy Apply" on filters bar
     When user filter with all filters
     Then user try to easy Apply to all results on the Results Page
-    Then user quits browser
 
     Examples:
       | jobType                      |
-      | qa engineer                  |
-      | software tester              |
-      | quality assurance specialist |
-      | quality assurance engineer   |
-      | qa specialist                |
-      | selenium                     |
       | cucumber                     |
       | testNG                       |

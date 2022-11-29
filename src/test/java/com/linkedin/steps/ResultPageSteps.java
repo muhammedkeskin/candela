@@ -205,7 +205,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
-        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Data Architect", "Director", "Mobile" };
+        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Data Architect", "Director", "Mobile","Cell", "Hardware", "Medical", "Device", "Document Control" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
             if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {

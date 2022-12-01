@@ -14,6 +14,7 @@ Feature: Apply Jobs
 #not1: çalıştırmadan önce sol tarafta configuration .properties dosyası açılır ve email ve password için deeğrler girilir
 #not2: run yaptıktan ve koşum bittikten sonra 8. satırda tırnak içindeki değer alttaki arama kriterleri ile değiştirilip tekrar run yapılır
 
+      # qa engineer
       # software tester
       # quality assurance specialist
       # quality assurance engineer

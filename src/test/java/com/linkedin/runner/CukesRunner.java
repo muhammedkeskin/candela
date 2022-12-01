@@ -7,13 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"json:target/cucumber.json",
-                "html:target/default-html-reports",//report almak için
-                "rerun:target/rerun.txt"//geçmeyen testleri hafızaya almak için
+                "html:target/default-html-reports",
+                "rerun:target/rerun.txt"
         },
-        features = "src/test/resources/features",//features ile bağlantı kurar
-        glue = "com/vytrack/step_definitions",//steps ile bağlantı kurar
-        dryRun = false, //true olursa headless modda koşar
-        tags = "@wip"//tag vermişseek o tagları koşar
+        features = "src/test/resources/features",
+        tags = "@apply"//
 
 )
 

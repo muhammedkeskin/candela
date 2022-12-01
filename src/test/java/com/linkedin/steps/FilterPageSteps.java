@@ -9,7 +9,6 @@ public class FilterPageSteps extends FilterPage {
         waitForPageToLoad(10);
         waitForVisibility(allFiltersButton,20);
         allFiltersButton.click();
-        urlContains("www.google.com");
         return this;
     }
     public FilterPageSteps selectSortAsMostRecent() throws InterruptedException {

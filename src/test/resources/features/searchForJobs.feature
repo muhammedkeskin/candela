@@ -5,7 +5,7 @@ Feature: Apply Jobs
     Given user navigate login page
     When user enter email and password
     And user navigate jobs page
-    And user search for jobs which is "qa engineer"
+    And user search for jobs which is "selenium"
     And user fill location as "United States"
     When user select filter as "Easy Apply" on filters bar
     When user filter with all filters

@@ -18,7 +18,7 @@ public class ResultPageSteps extends ResultsPage {
     private List<WebElement> checkIfAppliedBefore;
     private List<WebElement> checkNextButton;
     private List<WebElement> pages;
-
+    //span[text()='Easy Apply']
     public void applyAllJobsWhereInAllPages(){
         apply();
         for(int i=2;i<CalculatePages();i++){
@@ -56,6 +56,7 @@ public class ResultPageSteps extends ResultsPage {
         int resultCount;
         results = Driver.get().findElements(By.xpath("//a[@class='disabled ember-view job-card-container__link job-card-list__title']"));
         resultCount=results.size();
+        System.out.println("asd1: " +results.size());
 
         return resultCount;
     }
@@ -205,7 +206,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
-        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Data Architect", "Director", "Mobile","Cell", "Hardware", "Medical", "Device", "Document Control" };
+        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
             if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {

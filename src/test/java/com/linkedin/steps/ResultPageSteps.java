@@ -56,7 +56,6 @@ public class ResultPageSteps extends ResultsPage {
         int resultCount;
         results = Driver.get().findElements(By.xpath("//a[@class='disabled ember-view job-card-container__link job-card-list__title']"));
         resultCount=results.size();
-        System.out.println("asd1: " +results.size());
 
         return resultCount;
     }

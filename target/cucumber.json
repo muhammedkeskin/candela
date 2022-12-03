@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-01T13:15:17.964Z",
+        "start_timestamp": "2022-12-03T21:46:20.734Z",
         "line": 4,
-        "name": "Apply for jobs",
+        "name": "Apply for qa engineer",
         "description": "",
-        "id": "apply-jobs;apply-for-jobs",
+        "id": "apply-for-jobs;apply-for-qa-engineer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8359069800,
+              "duration": 11055591100,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 25096906800,
+              "duration": 26032047200,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 644999500,
+              "duration": 1058341800,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 4570403300,
+              "duration": 7568379900,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 5293125400,
+              "duration": 7637658600,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 2700319100,
+              "duration": 2977997200,
               "status": "passed"
             },
             "line": 10,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 4055685100,
+              "duration": 6565436300,
               "status": "passed"
             },
             "line": 11,
@@ -115,9 +115,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d107.0.5304.122)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.28.112.156\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b0d41eab18c3de7929a4a2a7c1dfbf3\n*** Element info: {Using\u003dxpath, value\u003d//h2[contains(text(),\u0027Software Developer Engineer\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)\r\n\tat org.openqa.selenium.By$ByXPath.findElements(By.java:348)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)\r\n\tat com.linkedin.steps.ResultPageSteps.easyApplyLogic(ResultPageSteps.java:211)\r\n\tat com.linkedin.steps.ResultPageSteps.easyApplyProcess(ResultPageSteps.java:65)\r\n\tat com.linkedin.steps.ResultPageSteps.apply(ResultPageSteps.java:37)\r\n\tat com.linkedin.steps.ResultPageSteps.applyAllJobsWhereInAllPages(ResultPageSteps.java:23)\r\n\tat com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page(stepdDefs.java:67)\r\n\tat ✽.user try to easy Apply to all results on the Results Page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:12)\r\n",
-              "duration": 84150994800,
-              "status": "failed"
+              "duration": 177820260200,
+              "status": "passed"
             },
             "line": 12,
             "name": "user try to easy Apply to all results on the Results Page",
@@ -132,11 +131,928 @@
             "name": "@apply"
           }
         ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:21.955Z",
+        "line": 15,
+        "name": "Apply for software tester",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-software-tester",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:16)\r\n",
+              "duration": 38994700,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3001900,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5998100,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1998400,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user search for jobs which is \"software tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"software tester\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5004000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000600,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5998900,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11001500,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:22.144Z",
+        "line": 26,
+        "name": "Apply for quality assurance specialist",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-quality-assurance-specialist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:27)\r\n",
+              "duration": 12997500,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8999400,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2001000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5002700,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user search for jobs which is \"quality assurance specialist\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"quality assurance specialist\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002100,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1996000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5996000,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000900,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:22.265Z",
+        "line": 37,
+        "name": "Apply for quality assurance engineer",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-quality-assurance-engineer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:38)\r\n",
+              "duration": 17000000,
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998700,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4001000,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "user search for jobs which is \"quality assurance engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"quality assurance engineer\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1995300,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9001700,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001100,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7001500,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:22.367Z",
+        "line": 48,
+        "name": "Apply for qa specialist",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-qa-specialist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:49)\r\n",
+              "duration": 16994500,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3001300,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2007100,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "user search for jobs which is \"qa specialist\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qa specialist\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1993200,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3998700,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996400,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8997500,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:22.476Z",
+        "line": 59,
+        "name": "Apply for selenium",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-selenium",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:60)\r\n",
+              "duration": 12001800,
+              "status": "failed"
+            },
+            "line": 60,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1995800,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998200,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2001800,
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "user search for jobs which is \"selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selenium\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004800,
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2001700,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2004600,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999100,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:22.552Z",
+        "line": 70,
+        "name": "Apply for cucumber",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-cucumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:71)\r\n",
+              "duration": 18186300,
+              "status": "failed"
+            },
+            "line": 71,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7999900,
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2004200,
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000700,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "user search for jobs which is \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4001900,
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000400,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998700,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T21:50:22.643Z",
+        "line": 81,
+        "name": "Apply for testNG",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-testng",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u0027192.168.1.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.linkedin.step_defs.stepdDefs.user_navigate_login_page(stepdDefs.java:24)\r\n\tat ✽.user navigate login page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:82)\r\n",
+              "duration": 38993500,
+              "status": "failed"
+            },
+            "line": 82,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9998900,
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2001100,
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7999200,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "user search for jobs which is \"testNG\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testNG\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4002000,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1999700,
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3001400,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5525500,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
       }
     ],
-    "name": "Apply Jobs",
+    "name": "Apply for Jobs",
     "description": "",
-    "id": "apply-jobs",
+    "id": "apply-for-jobs",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/searchForJobs.feature",
     "tags": []

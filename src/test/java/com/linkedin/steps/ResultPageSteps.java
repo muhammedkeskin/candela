@@ -21,11 +21,14 @@ public class ResultPageSteps extends ResultsPage {
     //span[text()='Easy Apply']
     public void applyAllJobsWhereInAllPages(){
         apply();
+        /*
         for(int i=2;i<CalculatePages();i++){
             Driver.get().findElement(By.xpath("//button[contains(@aria-label,'Page "+i+"')]")).click();
             waitFor(3);
             apply();
         }
+
+         */
     }
 
     public void apply() {
@@ -100,6 +103,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private void clickEasyApplyButton() {
+        waitFor(2);
         easyApplyButton.click();
     }
     private void checkWarningAfterSubmit() {
@@ -205,7 +209,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
-        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design" };
+        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
             if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {

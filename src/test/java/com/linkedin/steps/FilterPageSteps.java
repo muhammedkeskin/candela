@@ -33,3 +33,4 @@ public class FilterPageSteps extends FilterPage {
         showResultsButton.click();
     }
 }
+

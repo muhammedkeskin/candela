@@ -18,17 +18,16 @@ public class ResultPageSteps extends ResultsPage {
     private List<WebElement> checkIfAppliedBefore;
     private List<WebElement> checkNextButton;
     private List<WebElement> pages;
-    //span[text()='Easy Apply']
+    private List<WebElement> answerQuestionPopup;
     public void applyAllJobsWhereInAllPages(){
         apply();
-        /*
         for(int i=2;i<CalculatePages();i++){
             Driver.get().findElement(By.xpath("//button[contains(@aria-label,'Page "+i+"')]")).click();
             waitFor(3);
             apply();
         }
 
-         */
+
     }
 
     public void apply() {
@@ -133,6 +132,7 @@ public class ResultPageSteps extends ResultsPage {
 
     private void calculateWarningAfterSubmitted() {
         warningAfterSubmitted = Driver.get().findElements(By.xpath("//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view mlA block']"));
+        answerQuestionPopup=Driver.get().findElements(By.xpath("//div[@class='jpac-next-step-section']"));
     }
 
     private void calculateSubmitButton() {
@@ -197,7 +197,7 @@ public class ResultPageSteps extends ResultsPage {
 
     private boolean checkIfWarningAfterSubmitIsAvailable() {
         calculateWarningAfterSubmitted();
-        if(warningAfterSubmitted.size()>0) {
+        if(warningAfterSubmitted.size()>0||answerQuestionPopup.size()>0) {
             return true;
         }
         return false;
@@ -209,7 +209,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
-        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical" };
+        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical", "Application Engineer", "Applications Engineer", "Appian Developer" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
             if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {

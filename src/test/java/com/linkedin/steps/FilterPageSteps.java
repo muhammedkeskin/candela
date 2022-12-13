@@ -6,7 +6,7 @@ public class FilterPageSteps extends FilterPage {
 
 
     public FilterPageSteps clickAllFiltersButton() {
-        waitForPageToLoad(10);
+        waitFor(3);
         waitForVisibility(allFiltersButton,20);
         allFiltersButton.click();
         return this;

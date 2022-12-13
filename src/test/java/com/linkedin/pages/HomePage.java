@@ -31,7 +31,7 @@ public class HomePage extends BrowserUtils {
     public WebElement locationInput;
 
     public void navigateJobPage() {
-        waitForVisibility(jobsButton,5);
+        waitFor(5);
         jobsButton.click();
     }
 

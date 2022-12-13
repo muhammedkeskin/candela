@@ -19,6 +19,9 @@ public class ResultPageSteps extends ResultsPage {
     private List<WebElement> checkNextButton;
     private List<WebElement> pages;
     private List<WebElement> answerQuestionPopup;
+    private List<WebElement> applicationSentPopup;
+    private List<WebElement> tryPremiumPopup;
+    private List<WebElement> addSkillsPopup;
     public void applyAllJobsWhereInAllPages(){
         apply();
         for(int i=2;i<CalculatePages();i++){
@@ -34,7 +37,7 @@ public class ResultPageSteps extends ResultsPage {
         scrollEndOfThePage();
         scrollUpOfThePage();
         for(int i=1;i<=calculateAllOffersOnTheResultsPage();i++) {
-            waitForPageToLoad(60);
+            waitFor(3);
             Driver.get().findElement(By.xpath("(//a[@class='disabled ember-view job-card-container__link job-card-list__title'])["+i+"]")).click();
             easyApplyProcess();
         }
@@ -133,6 +136,9 @@ public class ResultPageSteps extends ResultsPage {
     private void calculateWarningAfterSubmitted() {
         warningAfterSubmitted = Driver.get().findElements(By.xpath("//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view mlA block']"));
         answerQuestionPopup=Driver.get().findElements(By.xpath("//div[@class='jpac-next-step-section']"));
+        applicationSentPopup=Driver.get().findElements(By.cssSelector(".artdeco-button.artdeco-button--2.artdeco-button--primary.ember-view.mlA.block"));
+        tryPremiumPopup=Driver.get().findElements(By.cssSelector(".app-aware-link.artdeco-button.artdeco-button--premium "));
+        addSkillsPopup=Driver.get().findElements(By.xpath("//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view']"));
     }
 
     private void calculateSubmitButton() {
@@ -197,7 +203,7 @@ public class ResultPageSteps extends ResultsPage {
 
     private boolean checkIfWarningAfterSubmitIsAvailable() {
         calculateWarningAfterSubmitted();
-        if(warningAfterSubmitted.size()>0||answerQuestionPopup.size()>0) {
+        if(warningAfterSubmitted.size()>0||answerQuestionPopup.size()>0||applicationSentPopup.size()>0||tryPremiumPopup.size()>0||addSkillsPopup.size()>0) {
             return true;
         }
         return false;
@@ -209,7 +215,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
-        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical", "Application Engineer", "Applications Engineer", "Appian Developer" };
+        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Software engineering", "Lead", "lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical", "Application Engineer", "Applications Engineer", "Appian Developer", "DevOps", "Architect", "Robotic Programmer", "Software Development Engineer" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
             if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {

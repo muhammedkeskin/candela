@@ -9,20 +9,20 @@ public class HomePageSteps extends HomePage {
 
 
     public void searchForJob(String job) {
-        waitForVisibility(searchInbox, 15);
+        waitFor(5);
         searchInbox.sendKeys(job);
         searchInbox.sendKeys(Keys.ENTER);
     }
 
     public void fillLocationInfo(String location) {
-        waitForVisibility(locationInput,10);
+        waitFor(2);
         locationInput.clear();
         locationInput.sendKeys(location);
         locationInput.sendKeys(Keys.ENTER);
     }
 
     public void selectFilterOnFilterBar(String filterWithVisibilityName) {
-            waitForPageToLoad(15);
+            waitFor(5);
             Driver.get()
                     .findElement(By.xpath("//button[contains(@aria-label,'" + filterWithVisibilityName + " filter.')]"))
                     .click();

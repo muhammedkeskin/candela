@@ -22,6 +22,8 @@ public class stepdDefs {
     public void user_navigate_login_page() {
         String url= ConfigurationReader.get("url");
         Driver.get().get(url);
+        loginPageSteps.maximize();
+
     }
 
     @When("user enter email and password")

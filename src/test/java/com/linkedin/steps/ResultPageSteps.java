@@ -22,6 +22,7 @@ public class ResultPageSteps extends ResultsPage {
     private List<WebElement> applicationSentPopup;
     private List<WebElement> tryPremiumPopup;
     private List<WebElement> addSkillsPopup;
+
     public void applyAllJobsWhereInAllPages(){
         apply();
         for(int i=2;i<CalculatePages();i++){

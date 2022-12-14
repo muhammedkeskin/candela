@@ -67,6 +67,5 @@ public class stepdDefs {
     public void user_try_to_easy_Apply_to_all_results_on_the_Results_Page() {
         resultsPageSteps.refreshPage();
         resultsPageSteps.applyAllJobsWhereInAllPages();
-        Driver.closeDriver();
     }
 }

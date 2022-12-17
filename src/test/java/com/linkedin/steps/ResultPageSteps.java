@@ -220,7 +220,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private boolean easyApplyLogic() {
-        String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Software engineering", "Lead", "lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical", "Application Engineer", "Applications Engineer", "Appian Developer", "DevOps", "Architect", "Robotic Programmer", "Software Development Engineer" };
+        String WontInterestWords[] = {"software developer engineer", "software engineer", "lead", "manager", "vehicle", "electr", "data architect", "director", "mobile", "cell", "hardware", "medical", "device", "document control", "salesforce", "atm", "design", "mechanical", "application engineer", "appian developer", "devops", "architect", "robotic programmer" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
             if(JobTitle.getText().toLowerCase().contains(WontInterestWords[i])) {

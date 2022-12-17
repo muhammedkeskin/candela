@@ -1,7 +1,7 @@
 Feature: Apply for Jobs
 
   @apply
-  Scenario Outline: Apply for qa engineer
+  Scenario Outline: Apply for "<job Type>"
     Given user navigate login page
     When user enter email and password
     And user navigate jobs page

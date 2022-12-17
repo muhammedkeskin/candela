@@ -37,4 +37,7 @@ public class ResultsPage extends BrowserUtils {
 
     @FindBy(xpath = "//li-icon[@type='cancel-icon'][@class='artdeco-button__icon']")
     public WebElement warningAfterSubmittedCancellationIcon;
+
+    @FindBy(css=".t-24.t-bold.jobs-unified-top-card__job-title")
+    public WebElement JobTitle;
 }

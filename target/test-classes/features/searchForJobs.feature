@@ -1,7 +1,7 @@
 Feature: Apply for Jobs
 
   @apply
-  Scenario Outline: Apply for qa engineer
+  Scenario Outline: Apply for "<job Type>"
     Given user navigate login page
     When user enter email and password
     And user navigate jobs page
@@ -20,18 +20,4 @@ Feature: Apply for Jobs
       | qa specialist                |
       | quality assurance engineer   |
 
-
-#BEFORE METHOD-->HOOKS EKLEMEK GEREKEBİLİR. ORADA  HER SENARYODAN ÖNCE TEKRAR driver SET EDİLİRSE FARKLI BİR ÇÖZÜM DAHA OLABİLİR
-
-
 #not1: çalıştırmadan önce sol tarafta configuration .properties dosyası açılır ve email ve password için deeğrler girilir
-#not2: run yaptıktan ve koşum bittikten sonra 8. satırda tırnak içindeki değer alttaki arama kriterleri ile değiştirilip tekrar run yapılır
-
-      # qa engineer
-      # software tester
-      # quality assurance specialist
-      # quality assurance engineer
-      # qa specialist
-      # selenium
-      # cucumber
-      # testNG

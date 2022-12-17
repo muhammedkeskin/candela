@@ -22,6 +22,9 @@ public class ResultPageSteps extends ResultsPage {
     private List<WebElement> applicationSentPopup;
     private List<WebElement> tryPremiumPopup;
     private List<WebElement> addSkillsPopup;
+    private List<WebElement> getStartedPopUp;
+
+    private int submittedCount=0;
 
     public void applyAllJobsWhereInAllPages(){
         apply();
@@ -30,8 +33,6 @@ public class ResultPageSteps extends ResultsPage {
             waitFor(3);
             apply();
         }
-
-
     }
 
     public void apply() {
@@ -67,7 +68,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private void easyApplyProcess() {
-        waitFor(2);
+        waitFor(5);
         if(easyApplyLogic()) {
             if (checkIfAppliedBeforeMessageIsAvailable()) {
                 clickEasyApplyButton();
@@ -122,6 +123,8 @@ public class ResultPageSteps extends ResultsPage {
 
     private void SubmittingProcess() {
         submitButton.click();
+        submittedCount++;
+        System.out.println("yapılan başvuru sayısı: "+submittedCount);
         waitFor(5);
         checkWarningAfterSubmit();
     }
@@ -140,6 +143,7 @@ public class ResultPageSteps extends ResultsPage {
         applicationSentPopup=Driver.get().findElements(By.cssSelector(".artdeco-button.artdeco-button--2.artdeco-button--primary.ember-view.mlA.block"));
         tryPremiumPopup=Driver.get().findElements(By.cssSelector(".app-aware-link.artdeco-button.artdeco-button--premium "));
         addSkillsPopup=Driver.get().findElements(By.xpath("//button[@class='artdeco-button artdeco-button--2 artdeco-button--primary ember-view']"));
+        getStartedPopUp=Driver.get().findElements(By.cssSelector(".artdeco-button.artdeco-button--2.artdeco-button--primary.ember-view.post-apply-demographics__primary-cta.ml3.t-black"));
     }
 
     private void calculateSubmitButton() {
@@ -159,7 +163,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private void calculateMissingInformationMessage() {
-        errorMessage = Driver.get().findElements(By.xpath("//p[@class='fb-form-element__error-text t-12']"));
+        errorMessage = Driver.get().findElements(By.cssSelector(".artdeco-inline-feedback__icon"));
     }
 
     private boolean checkIfSubmitButtonIsAvailable() {
@@ -204,7 +208,7 @@ public class ResultPageSteps extends ResultsPage {
 
     private boolean checkIfWarningAfterSubmitIsAvailable() {
         calculateWarningAfterSubmitted();
-        if(warningAfterSubmitted.size()>0||answerQuestionPopup.size()>0||applicationSentPopup.size()>0||tryPremiumPopup.size()>0||addSkillsPopup.size()>0) {
+        if(warningAfterSubmitted.size()>0||answerQuestionPopup.size()>0||applicationSentPopup.size()>0||tryPremiumPopup.size()>0||addSkillsPopup.size()>0||getStartedPopUp.size()>0) {
             return true;
         }
         return false;
@@ -219,7 +223,7 @@ public class ResultPageSteps extends ResultsPage {
         String WontInterestWords[] = {"Software Developer Engineer", "Software Engineer", "Software engineering", "Lead", "lead", "Manager", "Vehicle", "Electric", "Electronic", "Data Architect", "Director", "Mobile", "Cell", "Hardware", "Medical", "Device", "Document Control", "Salesforce", "Director", "ATM", "Design", "Mechanical", "Application Engineer", "Applications Engineer", "Appian Developer", "DevOps", "Architect", "Robotic Programmer", "Software Development Engineer" };
         int a = WontInterestWords.length;
         for(int i=0;i<a;i++) {
-            if(Driver.get().findElements(By.xpath("//h2[contains(text(),'"+WontInterestWords[i]+"')]")).size()>0) {
+            if(JobTitle.getText().toLowerCase().contains(WontInterestWords[i])) {
                 return false;
             }
         }

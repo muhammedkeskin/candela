@@ -163,7 +163,7 @@ public class ResultPageSteps extends ResultsPage {
     }
 
     private void calculateMissingInformationMessage() {
-        errorMessage = Driver.get().findElements(By.xpath("//p[@class='fb-form-element__error-text t-12']"));
+        errorMessage = Driver.get().findElements(By.cssSelector(".artdeco-inline-feedback__icon"));
     }
 
     private boolean checkIfSubmitButtonIsAvailable() {

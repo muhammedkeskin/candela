@@ -125,7 +125,7 @@ public class ResultPageSteps extends ResultsPage {
         submitButton.click();
         submittedCount++;
         System.out.println("yapılan başvuru sayısı: "+submittedCount);
-        waitFor(5);
+        waitFor(3);
         checkWarningAfterSubmit();
     }
 

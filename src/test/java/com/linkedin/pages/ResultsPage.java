@@ -40,4 +40,7 @@ public class ResultsPage extends BrowserUtils {
 
     @FindBy(css=".t-24.t-bold.jobs-unified-top-card__job-title")
     public WebElement JobTitle;
+
+    @FindBy(xpath = "(//button[@aria-label='Choose Resume'])[1]")
+    public WebElement chooseFirstResumeButton;
 }

@@ -1,0 +1,1001 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-20T06:12:29.609Z",
+        "line": 15,
+        "name": "Apply for \"qa engineer\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;2",
+        "after": [
+          {
+            "result": {
+              "duration": 696296300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13908882600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28747500000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5594253800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6085149400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"qa engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qa engineer\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5424652800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7762040800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6595020800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca data-control-id\u003d\"yIYDoOKx0nBTHrROrlJVbg\u003d\u003d\" tabindex\u003d\"0\" href\u003d\"/jobs/view/3402490831/?eBP\u003dCwEAAAGFLiq4wuZ13sqe848Xp0VCQaTiWz7AY4-Q0oTvxM5KN1RVCKPxqmQ3i_SUjICe8gXqcTaY9ztbggOybkPTnwWUnR98T2TUAfX3XUUZP2O6mtD_O7UU-lA6m5pM2RRVe3ptvfcnW8SJNBwGxZ5-VWh3dcyaMi_p-r65yV7DZ4gWBTQQoWpf2LghSsR2kSggGPsN82z-y3oxo_Qm2-xIHPJrCdXHrSHac-Dl597TlL2SoLLd-qblJjxvLg24N7PinFnHsxppJe0p1-bkpvagmhV_7AioRpgRpgzb--zwlGqqwYb2szhuNiYHtlEVMBpWqisLqtR0cZnPmWXIXwjdBWvAK5JXV3MJcKSOz7M7qVFp_-FMTwYV9cGyyNUOM_4\u0026amp;recommendedFlavor\u003dPRE_SCREENING_QUESTIONS\u0026amp;refId\u003dW0rumzYaPHh%2Fe7xNT1Sq6A%3D%3D\u0026amp;trackingId\u003dyIYDoOKx0nBTHrROrlJVbg%3D%3D\u0026amp;trk\u003dflagship3_search_srp_jobs\" id\u003d\"ember191\" class\u003d\"disabled ember-view job-card-container__link job-card-list__title\"\u003e...\u003c/a\u003e is not clickable at point (320, 365). Other element would receive the click: \u003cdiv class\u003d\"ph5\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1186096d74ba73918d1a0507079b074a\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.linkedin.steps.ResultPageSteps.apply(ResultPageSteps.java:43)\r\n\tat com.linkedin.steps.ResultPageSteps.applyAllJobsWhereInAllPages(ResultPageSteps.java:30)\r\n\tat com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page(stepdDefs.java:69)\r\n\tat ✽.user try to easy Apply to all results on the Results Page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:12)\r\n",
+              "duration": 40656632100,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-20T06:14:25.350Z",
+        "line": 16,
+        "name": "Apply for \"selenium\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;3",
+        "after": [
+          {
+            "result": {
+              "duration": 701950000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8307556800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48433365600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5748247000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5749523800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selenium\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2666665200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(@aria-label,\u0027Easy Apply filter.\u0027)]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64273}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bf109cda3bacab50700c3bb2210ddd97\n*** Element info: {Using\u003dxpath, value\u003d//button[contains(@aria-label,\u0027Easy Apply filter.\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.linkedin.steps.HomePageSteps.selectFilterOnFilterBar(HomePageSteps.java:27)\r\n\tat com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(stepdDefs.java:55)\r\n\tat ✽.user select filter as \"Easy Apply\" on filters bar(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:10)\r\n",
+              "duration": 5059687000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-20T06:15:42.030Z",
+        "line": 17,
+        "name": "Apply for \"cucumber\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;4",
+        "after": [
+          {
+            "result": {
+              "duration": 608968600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5138028300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25735745000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5825035500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5617086300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cucumber\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2727038900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(@aria-label,\u0027Easy Apply filter.\u0027)]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6bebacb77814ea27cadf2fff484b38b0\n*** Element info: {Using\u003dxpath, value\u003d//button[contains(@aria-label,\u0027Easy Apply filter.\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.linkedin.steps.HomePageSteps.selectFilterOnFilterBar(HomePageSteps.java:27)\r\n\tat com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(stepdDefs.java:55)\r\n\tat ✽.user select filter as \"Easy Apply\" on filters bar(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:10)\r\n",
+              "duration": 5055347500,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-20T06:16:32.754Z",
+        "line": 18,
+        "name": "Apply for \"quality assurance specialist\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;5",
+        "after": [
+          {
+            "result": {
+              "duration": 768725400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5069625000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25071251000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5707232000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6705381800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"quality assurance specialist\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"quality assurance specialist\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6113852800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7559349500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6394881200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca data-control-id\u003d\"R+oZuuT+yRp/ZOja31zwhg\u003d\u003d\" tabindex\u003d\"0\" href\u003d\"/jobs/view/3399728566/?eBP\u003dCwEAAAGFLi49YgLgS7-fqg5xliwYO9KmNLSBisFUWQgp31b04iBN-9waEFk1ZKb3VvomXKkbgh0r3ZNIwaLLkQ8yyyMc7ulL66FrDtgwGpR_u2wwZI3g0E2TL-6POW8EjvEKBJf_IOuoGuKl2R-oLRfYAY-Y5nDPdw_yumZihXENN7qljb0lbRlgr_fDD7DXfHcqdv9OUyuStBLsgjQFB-mNqF_cfP_YUSrhV4tTQO45ozipnegM0Az1lxj2U37o3OR-YOasJ_jiJ72wF1UGAVETOJVNjbBMeiy7J5b7c4851yU2I8HG3dX86lvz01s40N1fQkRRiBwFSQ0rszyyWDVZBFNcN7WDbfkpf_3VTTbKS00Pbg6km3-oNT-_5lVP\u0026amp;recommendedFlavor\u003dPRE_SCREENING_QUESTIONS\u0026amp;refId\u003dU5MtwroTsl%2FWqELpze1MAQ%3D%3D\u0026amp;trackingId\u003dR%2BoZuuT%2ByRp%2FZOja31zwhg%3D%3D\u0026amp;trk\u003dflagship3_search_srp_jobs\" id\u003d\"ember209\" class\u003d\"disabled ember-view job-card-container__link job-card-list__title\"\u003e...\u003c/a\u003e is not clickable at point (367, 349). Other element would receive the click: \u003cdiv class\u003d\"jobs-resume-picker__resume-list\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64460}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 059287732b77a60da977d9f48409852c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.linkedin.steps.ResultPageSteps.apply(ResultPageSteps.java:43)\r\n\tat com.linkedin.steps.ResultPageSteps.applyAllJobsWhereInAllPages(ResultPageSteps.java:30)\r\n\tat com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page(stepdDefs.java:69)\r\n\tat ✽.user try to easy Apply to all results on the Results Page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:12)\r\n",
+              "duration": 37562082300,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-20T06:18:13.717Z",
+        "line": 19,
+        "name": "Apply for \"software tester\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;6",
+        "after": [
+          {
+            "result": {
+              "duration": 690954800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5025947100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23658510900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5876772200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5773687100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"software tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"software tester\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2675149700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(@aria-label,\u0027Easy Apply filter.\u0027)]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64564}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bac21de2805409e8baf9c947f7aff838\n*** Element info: {Using\u003dxpath, value\u003d//button[contains(@aria-label,\u0027Easy Apply filter.\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.linkedin.steps.HomePageSteps.selectFilterOnFilterBar(HomePageSteps.java:27)\r\n\tat com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(stepdDefs.java:55)\r\n\tat ✽.user select filter as \"Easy Apply\" on filters bar(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:10)\r\n",
+              "duration": 5052290000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-20T06:19:02.481Z",
+        "line": 20,
+        "name": "Apply for \"qa specialist\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;7",
+        "after": [
+          {
+            "result": {
+              "duration": 1291242300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4752537800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28321012300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5511789400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6024685200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"qa specialist\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qa specialist\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5412729400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8270438900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9920785600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca data-control-id\u003d\"YqWdb/+HlcpucsPWHIXkLA\u003d\u003d\" tabindex\u003d\"0\" href\u003d\"/jobs/view/3399728566/?eBP\u003dCwEAAAGFLjCpMCj7kxtiH4OMPwCET0ajaMB5gZLJFcs3BgDIae4HOGlz7Vf2pCPQBlyYOON8ykKtf7LlXgSXyCc8MGUVp9KSHJy2qrRYeHuwQuIkqpigpTLqvatiYtaq1cGLEOxVH_X15cK_AYoVDrAJ-RM6h1qXDdXksNfX3nwPkLap1jhmdYHj7Z38C91ioQ007AKnJhOI4Bf0I4ZJnIuslcnn_7kKjJ4iLS9DaZKc0qPIfxp57q_EouWYCHn8cEFPC0TZFLSU0Q18QzOjoZQpvi83iE7Hvw_vXXzuBv5eppHwyNdo095bJqyXqvzGOYpeI9jyJ3vwowxvja3pxR0iiArCbNvUy3qJvpleBZCaBmpneBeZCmoNaDE\u0026amp;recommendedFlavor\u003dPRE_SCREENING_QUESTIONS\u0026amp;refId\u003d19Jhf6VJ5djmImbXtZkOZg%3D%3D\u0026amp;trackingId\u003dYqWdb%2F%2BHlcpucsPWHIXkLA%3D%3D\u0026amp;trk\u003dflagship3_search_srp_jobs\" id\u003d\"ember209\" class\u003d\"disabled ember-view job-card-container__link job-card-list__title\"\u003e...\u003c/a\u003e is not clickable at point (367, 349). Other element would receive the click: \u003cdiv class\u003d\"jobs-resume-picker__resume-list\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e293ec831ace8699f63794be8353bbac\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.linkedin.steps.ResultPageSteps.apply(ResultPageSteps.java:43)\r\n\tat com.linkedin.steps.ResultPageSteps.applyAllJobsWhereInAllPages(ResultPageSteps.java:30)\r\n\tat com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page(stepdDefs.java:69)\r\n\tat ✽.user try to easy Apply to all results on the Results Page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:12)\r\n",
+              "duration": 47155827500,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-20T06:20:59.153Z",
+        "line": 21,
+        "name": "Apply for \"quality assurance engineer\"",
+        "description": "",
+        "id": "apply-for-jobs;apply-for-\"\u003cjob-type\u003e\";;8",
+        "after": [
+          {
+            "result": {
+              "duration": 829943100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.linkedin.runner.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4952428400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate login page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24817636300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter email and password",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_enter_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5433508800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigate jobs page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_navigate_jobs_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7055484300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for jobs which is \"quality assurance engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"quality assurance engineer\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSearchForJobsWhichIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5741896800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill location as \"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.user_fill_location_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7518627900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user select filter as \"Easy Apply\" on filters bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Easy Apply\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.linkedin.step_defs.stepdDefs.userSelectFilterAsOnFiltersBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5399808600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user filter with all filters",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_filter_with_all_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca data-control-id\u003d\"Qow7B5i62hWWM1SaFkKJoA\u003d\u003d\" tabindex\u003d\"0\" href\u003d\"/jobs/view/3399746240/?eBP\u003dCwEAAAGFLjJNptzEajYSDGMQKiLVXiz3gON65mcxxLolzyZd3SeqYiGZcVKJyyCsqLHnMx9HMzzDaeRlUkj66BfzyTJMw0UVvbrmye3EKckKPbQHA-zP4BY8g0PC9Dxz5NF8-Uej9FlJyJ2FanN4ZjteiEca86zbGouDPinIj74lenbYFE-A38PU2mGJV8jiXi1BHaWTtrpdTdDSVy78SZ1SbaMmK6OW4mFg_L-J5mokwpUDzjK7MsQUw1bUjFmym-C_yNl03uZGKTSAWOCgWLIKmBbN8UmcR0k-iqKVQ9NWVtI6O-UOHHqY8aBYIYnF1_CmXHiKiVhoExqrebMHcr7sGezDrs0iDWbT3hvJyT6MFcxTuxT2OLYAmbYYOQ0wAsY\u0026amp;recommendedFlavor\u003dACTIVELY_HIRING_COMPANY\u0026amp;refId\u003d7Nuj%2Fywz5QoeAPVsSv1nNQ%3D%3D\u0026amp;trackingId\u003dQow7B5i62hWWM1SaFkKJoA%3D%3D\u0026amp;trk\u003dflagship3_search_srp_jobs\" id\u003d\"ember209\" class\u003d\"disabled ember-view job-card-container__link job-card-list__title\"\u003e...\u003c/a\u003e is not clickable at point (376, 377). Other element would receive the click: \u003cdiv class\u003d\"t-12 t-black--light\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JKQ6A3Q\u0027, ip: \u002710.14.112.125\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\MUHAMM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7625ba015c8ab12ce100caf5f00a8a80\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.linkedin.steps.ResultPageSteps.apply(ResultPageSteps.java:43)\r\n\tat com.linkedin.steps.ResultPageSteps.applyAllJobsWhereInAllPages(ResultPageSteps.java:30)\r\n\tat com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page(stepdDefs.java:69)\r\n\tat ✽.user try to easy Apply to all results on the Results Page(file:///C:/Users/MuhammedKeskin/IdeaProjects/candela/src/test/resources/features/searchForJobs.feature:12)\r\n",
+              "duration": 39988754400,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user try to easy Apply to all results on the Results Page",
+            "match": {
+              "location": "com.linkedin.step_defs.stepdDefs.user_try_to_easy_Apply_to_all_results_on_the_Results_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apply"
+          }
+        ]
+      }
+    ],
+    "name": "Apply for Jobs",
+    "description": "",
+    "id": "apply-for-jobs",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/searchForJobs.feature",
+    "tags": []
+  }
+]

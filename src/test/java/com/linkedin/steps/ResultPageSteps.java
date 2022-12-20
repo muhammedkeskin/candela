@@ -109,6 +109,7 @@ public class ResultPageSteps extends ResultsPage {
     private void clickEasyApplyButton() {
         waitFor(2);
         easyApplyButton.click();
+        chooseResume();
     }
     private void checkWarningAfterSubmit() {
         if(checkIfWarningAfterSubmitIsAvailable()) {
@@ -135,6 +136,7 @@ public class ResultPageSteps extends ResultsPage {
 
     private void nextButtonProcess() {
         nextButton.click();
+        chooseResume();
     }
 
     private void calculateWarningAfterSubmitted() {
@@ -228,5 +230,13 @@ public class ResultPageSteps extends ResultsPage {
             }
         }
         return true;
+    }
+
+    private void chooseResume() {
+        waitFor(2);
+        List<WebElement> chooseResume=Driver.get().findElements(By.xpath("//button[@aria-label='Choose Resume']"));
+        if(chooseResume.size()>0) {
+            chooseFirstResumeButton.click();
+        }
     }
 }

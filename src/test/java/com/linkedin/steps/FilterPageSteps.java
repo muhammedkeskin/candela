@@ -1,6 +1,7 @@
 package com.linkedin.steps;
 
 import com.linkedin.pages.FilterPage;
+import org.junit.Test;
 
 public class FilterPageSteps extends FilterPage {
 
@@ -31,6 +32,12 @@ public class FilterPageSteps extends FilterPage {
 
     public void clickShowResultsButton() {
         showResultsButton.click();
+    }
+
+    @Test
+    public void test() {
+        String str="ASFFasdf";
+        System.out.println(str.toLowerCase());
     }
 }
 

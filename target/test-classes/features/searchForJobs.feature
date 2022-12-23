@@ -12,12 +12,9 @@ Feature: Apply for Jobs
     Then user try to easy Apply to all results on the Results Page
     Examples:
       | job Type                     |
-      | qa engineer                  |
       | selenium                     |
-      | cucumber                     |
-      | quality assurance specialist |
+      | qa tester                    |
       | software tester              |
-      | qa specialist                |
-      | quality assurance engineer   |
+
 
 #not1: çalıştırmadan önce sol tarafta configuration .properties dosyası açılır ve email ve password için deeğrler girilir

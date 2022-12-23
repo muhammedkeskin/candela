@@ -12,8 +12,9 @@ Feature: Apply for Jobs
     Then user try to easy Apply to all results on the Results Page
     Examples:
       | job Type                     |
-      | qa tester                  |
       | selenium                     |
+      | qa tester                    |
       | software tester              |
 
-#not1: çalıştırmadan önce sol tarafta configuration .properties dosyası açılır ve email ve password için deeğrler girilir
+
+#not1: çalıştırmadan önce sol tarafta configuration .properties dosyası açılır ve email ve password için değerler girilir

@@ -28,4 +28,10 @@ public class HomePageSteps extends HomePage {
                     .click();
             waitFor(2);
     }
+
+    public void selectFilterOnFilterBar() {
+        waitFor(5);
+        easyApplyFilterButton.click();
+        waitFor(2);
+    }
 }

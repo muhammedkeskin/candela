@@ -55,6 +55,11 @@ public class stepdDefs {
         homePageSteps.selectFilterOnFilterBar(filterName);
     }
 
+    @When("user select filter as Easy Apply on filter bar")
+    public void user_select_filter_as_Easy_Apply_on_filter_bar() {
+        homePageSteps.selectFilterOnFilterBar();
+    }
+
     @When("user filter with all filters")
     public void user_filter_with_all_filters() {
         filterPageSteps.clickAllFiltersButton()
